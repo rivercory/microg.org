@@ -2,3 +2,7 @@ imprint.md
 *.html
 *.iml
 .idea/
+css/bootstrap*
+js/bootstrap*
+js/jquery*
+fonts/glyphicons*

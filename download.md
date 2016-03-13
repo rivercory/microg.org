@@ -19,10 +19,10 @@ It currently provides stable and nightly updates for GmsCore as well as releases
     <div class="static_content">
         <div class="row">
             <div class="col-md-7 repo-desc">
-                <div class="desc-entry"><span class="attrib">Address</span><span class="value">https://microg.org/fdroid/repo</span>
+                <div class="desc-entry"><span class="attrib">Address </span><span class="value">https://microg.org/fdroid/repo</span>
                 </div>
                 <div class="desc-entry"><span
-                        class="attrib">Fingerprint of the signing key (SHA-256)</span><span class="value">9B D0 67 27 E6 27 96 C0 13 0E B6 DA B3 9B 73 15 74 51 58 2C BD 13 8E 86 C4 68 AC C3 95 D1 41 65</span>
+                        class="attrib">Fingerprint of the signing key (SHA-256) </span><span class="value">9B D0 67 27 E6 27 96 C0 13 0E B6 DA B3 9B 73 15 74 51 58 2C BD 13 8E 86 C4 68 AC C3 95 D1 41 65</span>
                 </div>
             </div>
             <div class="col-md-5 repo-desc">
