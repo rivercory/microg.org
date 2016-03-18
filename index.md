@@ -2,10 +2,9 @@
 %
 %
 
-<div class="jumbotron">
-  <h1><img src="/img/microg_full_colored.svg" alt="microG"> Project</h1>
-  <h3>A free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries.</h3> 
-</div>
+> %jumbotron%
+> # <img src="/img/microg_full_colored.svg" alt="microG"> Project
+> ### A free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries.
 
 About
 -----

@@ -7,7 +7,7 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 }
 
 .footer {
@@ -55,42 +55,45 @@ body {
     vertical-align: text-bottom;
 }
 
-.repo-desc {
+.fdroid-repo-desc > .row > div {
     padding: 20px;
 }
 
-.desc-entry {
-    padding-bottom: 5px;
-}
-
-.desc-entry > .attrib {
+.fdroid-repo-desc span.key {
     color: #999;
     display: block;
 }
 
-.desc-entry > .value {
+.fdroid-repo-desc span.val {
     display: block;
+    padding-bottom: 10px;
 }
 
-.dl-app {
+.fdroid-dl-app {
     margin-bottom: 10px;
 }
 
-.dl-desc-name {
+.fdroid-dl-app span.name {
+    display: block;
     margin-top: 5px;
     font-weight: bold;
 }
-
-.dl-desc-summary {
+.fdroid-dl-app span.pname {
+    display: block;
     color: #999;
     margin-bottom: 5px;
 }
 
-.dl-btn-ver {
-    color: #999;
-    font-size: 80%;
+.fdroid-dl-app p {
+    margin: 0;
 }
 
 .btn-dl {
     height: 48px;
+}
+
+.btn-dl span.ver {
+    display: block;
+    color: #999;
+    font-size: 80%;
 }
