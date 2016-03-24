@@ -34,8 +34,8 @@ The official repositories providing apps from the microG Project.
 <script type="text/javascript">
     fdroid.getRepoInfo("https://microg.org/fdroid/repo", function(repoInfo) {
         $("#mainrepo").parent().next().children(".row").replaceWith(fdroid.createRepoDetails(repoInfo));
-    }
+    });
     fdroid.getRepoInfo("https://microg.org/fdroid/archive", function(repoInfo) {
         $("#archiverepo").parent().next().children(".row").replaceWith(fdroid.createRepoDetails(repoInfo));
-    }
+    });
 </script>
