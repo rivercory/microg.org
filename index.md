@@ -20,8 +20,8 @@ Increasing demand in the free software community in addition to severe problems 
 led to the development of a free software clone of Google's proprietary core libraries and applications - the microG Project was born.
 
 Although most microG components are far from complete, users are amazed by the results. Free software users got extended application support,
-privacy-caring users can reduce or monitor data that is sent to Google and especially older phones can expect quiet some battery life improvements.
-microG is not only used on real devices, but also replaced Google tools in some test emulators and is even used in virtual mobile infrastructure.
+privacy-caring users can reduce or monitor data that is sent to Google and especially older phones can expect some battery life improvements.
+microG is not only used on real devices, but also replaces Google tools in test emulators and is even used in virtual mobile infrastructure.
 
 Components
 ----------
