@@ -9,15 +9,14 @@
 About
 -----
 The linux-based open-source mobile operating system Android is not only the most popular mobile operating system in the world, 
-it's also on the way to become a proprietary operating system. How is that?
+it's also on the way to becoming a proprietary operating system. How is that?
 
-While the core operating system is still released as part of the Android Open Source Project, the majority of core apps is not.
-It even got worse: More and more libraries and APIs are only available on phones that run various Google apps pre-installed,
-effectively locking third-party apps to the Google ecosystem. For these reasons Android is [called](http://arstechnica.com/gadgets/2013/10/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/4/) a "*look but don't touch*" kind of open.
+While the core operating system is still released as part of the Android Open Source Project, the majority of core apps are not.
+It gets worse: More and more libraries and APIs are only available on phones that run various Google apps pre-installed,
+effectively locking third-party apps to the Google ecosystem. For these reasons Android is [described as being](http://arstechnica.com/gadgets/2013/10/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/4/) a "*look but don't touch*" kind of open.
 
-By now, several popular open-source applications like the [secure messenger Signal](https://github.com/WhisperSystems/Signal-Android) already require some of Google's proprietary libraries to be installed. 
-Increasing demand in the free software community in addition to severe problems in Google's proprietary software discovered by the Android modding community
-led to the development of a free software clone of Google's proprietary core libraries and applications - the microG Project was born.
+At this point, several popular open-source applications like the [secure messenger Signal](https://github.com/WhisperSystems/Signal-Android) already require some of Google's proprietary libraries to be installed. 
+Increasing demand in the free software community in addition to severe problems in Google's proprietary software discovered by the Android modding community, have led to the development of a free software clone of Google's proprietary core libraries and applications - the microG Project was born.
 
 Although most microG components are far from complete, users are amazed by the results. Free software users got extended application support,
 privacy-caring users can reduce or monitor data that is sent to Google and especially older phones can expect some battery life improvements.
