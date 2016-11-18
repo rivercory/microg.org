@@ -34,7 +34,7 @@ fdroid.getRepoInfo = function (baseUrl, callback) {
         });
         repoinfo.pubkey_sha256 = fdroid.shalib.sha256(repoinfo.pubkey).match(/.{1,2}/g).join(" ").toUpperCase();
         repoinfo.url = _repo.getAttribute("url");
-        repoinfo.url_with_key = repoinfo.url + "?fingerprint=" + fdroid.shalib.sha256(repoinfo.pubkey);
+        repoinfo.url_with_key = repoinfo.url + "?fingerprint=" + fdroid.shalib.sha256(repoinfo.pubkey).toUpperCase();
         repoinfo.qrcode_src = "https://chart.googleapis.com/chart?cht=qr&chl=" + encodeURIComponent(repoinfo.url_with_key) + "&chs=256x256&choe=UTF-8&chld=L|0";
         repoinfo.timestamp = _repo.getAttribute("timestamp");
         repoinfo.date = new Date(parseInt(repoinfo.timestamp) * 1000);
@@ -115,7 +115,7 @@ fdroid.createDownloadButton = function (repoInfo, packageName) {
             menu.appendChild(dropdownHeader("Preview releases"));
         }
         var prevCode;
-        Object.keys(app.versions).sort().reverse().forEach(function (vcode) {
+        Object.keys(app.versions).sort(function (a, b) {  return a - b;  }).reverse().forEach(function (vcode) {
             if (app.marketvercode == vcode) {
                 menu.appendChild(dropdownHeader("Current stable release"));
             } else if (app.marketvercode == prevCode) {
@@ -135,7 +135,7 @@ fdroid.createDownloadButton = function (repoInfo, packageName) {
 };
 
 fdroid.createRepoDetails = function (repoInfo) {
-    function createEntry(name, value) {
+    function createEntry(name, value, link) {
         var div_entry = document.createElement("div");
         div_entry.classList.add("desc-entry");
         var span_attrib = document.createElement("span");
@@ -144,7 +144,14 @@ fdroid.createRepoDetails = function (repoInfo) {
         div_entry.appendChild(span_attrib);
         var span_value = document.createElement("span");
         span_value.classList.add("val");
-        span_value.appendChild(document.createTextNode(value));
+        if (link) {
+            var value_a = document.createElement("a");
+            value_a.href = link;
+            value_a.appendChild(document.createTextNode(value));
+            span_value.appendChild(value_a);
+        } else {
+            span_value.appendChild(document.createTextNode(value));
+        }
         div_entry.appendChild(span_value);
         return div_entry;
     }
@@ -155,7 +162,7 @@ fdroid.createRepoDetails = function (repoInfo) {
     var div_content = document.createElement("div");
     div_content.classList.add("col-md-7");
     div_content.appendChild(createEntry("Name", repoInfo.name));
-    div_content.appendChild(createEntry("Address", repoInfo.url));
+    div_content.appendChild(createEntry("Address", repoInfo.url, repoInfo.url_with_key));
     div_content.appendChild(createEntry("Description", repoInfo.description));
     div_content.appendChild(createEntry("Number of apps", repoInfo.package_count));
     div_content.appendChild(createEntry("Last update", repoInfo.date.toLocaleString()));
@@ -164,9 +171,12 @@ fdroid.createRepoDetails = function (repoInfo) {
 
     var div_img = document.createElement("div");
     div_img.classList.add("col-md-5");
+    var img_a = document.createElement("a");
+    img_a.href= repoInfo.url_with_key;
     var img = document.createElement("img");
     img.src = repoInfo.qrcode_src;
-    div_img.appendChild(img);
+    img_a.appendChild(img);
+    div_img.appendChild(img_a);
     div_repo_details.appendChild(div_img);
 
     return div_repo_details;

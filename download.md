@@ -16,11 +16,11 @@ It currently provides stable and nightly updates for GmsCore as well as releases
 > > %row%
 > > > %col-md-7%
 > > > [Name](class:key) [microG F-Droid repo](class:val)
-> > > [Address](class:key) [https://microg.org/fdroid/repo](class:val)
+> > > [Address](class:key) [[https://microg.org/fdroid/repo](https://microg.org/fdroid/repo?fingerprint=9BD06727E62796C0130EB6DAB39B73157451582CBD138E86C468ACC395D14165)](class:val)
 > > > [Fingerprint of the signing key (SHA-256)](class:key) [9B D0 67 27 E6 27 96 C0 13 0E B6 DA B3 9B 73 15 74 51 58 2C BD 13 8E 86 C4 68 AC C3 95 D1 41 65](class:val)
 > >
 > > > %col-md-5%
-> > > <img src="https://chart.googleapis.com/chart?cht=qr&amp;chl=https%3A%2F%2Fmicrog.org%2Ffdroid%2Frepo%3Ffingerprint%3D9bd06727e62796c0130eb6dab39b73157451582cbd138e86c468acc395d14165&amp;chs=256x256&amp;choe=UTF-8&amp;chld=L|0">
+> > > [<img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmicrog.org%2Ffdroid%2Frepo%3Ffingerprint%3D9BD06727E62796C0130EB6DAB39B73157451582CBD138E86C468ACC395D14165&chs=256x256&choe=UTF-8&chld=L|0">](https://microg.org/fdroid/repo?fingerprint=9BD06727E62796C0130EB6DAB39B73157451582CBD138E86C468ACC395D14165)
 
 ### Direct downloads
 Nonetheless we provide direct downloads of apk files.
